@@ -1,1 +1,31 @@
-/* место для вашего кода */
+.header {
+  /* align-items: center; */
+  margin-top: 92px;
+  display: grid;
+  width: 1052px;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-content: center;
+}
+
+.header__menu {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center; 
+  gap: 10px 32px;
+ /*  width: 392px;
+  font-size: 18px; */
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__links-list-item {
+  list-style: circle;
+} 
+
+.header__logo {
+  display: block;
+  height: 105px;
+  width: 148px;
+}
