@@ -313,8 +313,8 @@
   width: 149px;
   height: 64px;
   font-size: 18px;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
 }
 
 .footer__menu-link-active {
@@ -329,9 +329,9 @@
 .footer__social-list {
   margin-left: 185px;
   display: flex;
+  justify-content: space-between;
   width: 240px;
   height: 48px;
-  justify-content: space-between;
 }
 
 .footer__social-icon {
