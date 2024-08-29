@@ -44,7 +44,9 @@
 
 .adress {
   display: grid;
-  /* margin-right: 50px; */
+  line-height: 24.3px;
+  text-underline-offset: 4px;
+  font-style: normal;
   place-content: center end;
   text-decoration: none;
 }
@@ -231,3 +233,52 @@
   text-transform: lowercase;
   text-decoration: underline;
 }
+
+.about {
+  margin-top: 148px;
+  margin-right: 24px;
+  margin-left: 24px;
+  display: grid;
+  grid-template-columns: 334px auto;
+  width: 1052px;
+  height: 595px;
+}
+
+.about__column {
+  display: grid;
+}
+
+.about__logo {
+  margin-top: 35px;
+  justify-self: center;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 120px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+  margin-top: 64px;
+  margin-left: 46px;
+}
+
+.about__title {
+  margin-top: 136px;
+  margin-bottom: 100px;
+  margin-left: 25px;
+  justify-self: left;
+  font-size: 40px;
+  font-weight: 700;
+  height: 47px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
