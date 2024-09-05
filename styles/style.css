@@ -11,8 +11,8 @@
 .header__menu {
   margin-top: 5px;
   padding: 0;
-  margin-left: 42px;
-  width: 392px;
+  margin-left: 33px;
+  width: 409px;
   display: flex;
   font-size: 18px;
   text-underline-offset: 3px;
@@ -33,18 +33,19 @@
 }
 
 .header__links-list-item {
+  margin-left: 0;
   list-style: circle;
+  white-space: nowrap;
 } 
 
 .header__link {
-  margin-right: 35px;
+  margin-right: 34px;
   line-height: 21.13px;
-  white-space: nowrap;
 }
 
 .header__logo {
   margin-top: 0;
-  margin-left: 24px;
+  margin-left: 16px;
   margin-right: 190px;
   display: block;
   height: 104px;
@@ -68,7 +69,7 @@
   vertical-align: bottom;
 }
 
-.header__adress {
+.auction__adress {
   text-decoration: underline;
 }
 
@@ -76,49 +77,52 @@
   margin-top: 96px;
   width: 100%;
   height: 757px;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-position: center center;
+  background: url(../images/cover.jpg) center / cover; 
   position: relative;
 }
 
 .overlay {
+  position: absolute; /*Как сделать слой свехру без абсолютного позиционирования этого элемента? */
   width: 100%;
   height: 100%;
   background-color: black;
   opacity: .6;
+  z-index: 0;
 }
 
 .cover__title {
-  position: absolute;
+  position: relative;
   z-index: 1;
   display: grid;
-  margin: 164px 50px 237px;
+  padding-top: 164px;
+  padding-left: 50px;
   width: 991px;
-  height: 355px;
   font-size: 100px;
   font-weight: 700;
+  line-height: 115px;
+  text-transform: uppercase;
   color: white;
 }
 
 .aligned-text {
   justify-self: start;
   width: 315px;
-  height: 115px;
   letter-spacing: 30px;
 }
 
 .aligned-text_center {
+  padding-top: 13px;
+  padding-left: 25px;
   justify-self: center;
   width: 419px;
-  height: 110px;
   letter-spacing: 30px;
 }
 
 .aligned-text_right {
+  padding-top: 5px;
+  padding-left: 50px;
   justify-self: end;
   width: 407px;
-  height: 95px;
   letter-spacing: 30px;
 }
 
@@ -131,12 +135,13 @@
 }
 
 .cover__description {
+  position: relative;
   display: flex;
-  position: absolute;
   z-index: 1;
-  margin: 0;
+  padding-top: 130px;
+  padding-left: 78px;
+  padding-right: 50px;
   width: 100%;
-  padding: 655px 50px 51px 78px;
   justify-content: space-between;
   align-items: center;
 }
@@ -150,8 +155,9 @@
 }
 
 .bet-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 256px;
-  height: 51px;
   background-color: transparent;
   border-color: white;
   border-style: solid;
@@ -167,7 +173,6 @@
   margin-right: 24px;
   margin-left: 24px;
   width: 1052px;
-  height: 692px;
 }
 
 .lots__heading {
@@ -175,12 +180,11 @@
   margin-bottom: 27px;
   font-size: 40px;
   font-weight: 700;
-  height: 47px;
   text-transform: uppercase;
 }
 
 .lots__card-list {
-  margin: 0;
+  margin-top: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -188,47 +192,46 @@
 .lots__card-list-item {
   display: grid;
   width: 334px;
-  height: 563px;
+}
+
+.card__link {
+  text-decoration: none;
+} 
+
+.card_type {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .card_type_film {
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center center;
-  position: relative;
+  background: url(../images/card-lot-01.jpg) center / cover;
 }
 
 .card_type_book {
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center center;
-  position: relative;
+  background: url(../images/card-lot-02.jpg) center / cover;
 }
 
 .card_type_picture {
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center center;
-  position: relative;
+  background: url(../images/card-lot-03.jpg) center / cover;
 }
 
 .card {
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
   display: grid;
-  margin: 51px 40px 48px;
-  height: 464px;
+  height: 100%;
   justify-content: space-between;
-  position: absolute;
   z-index: 1;
   color: white;
+  text-decoration: none;
 }
 
 .card__title {
+  padding-top: 51px;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -236,10 +239,11 @@
 }
 
 .card__text {
+  padding-bottom: 48px;
   font-size: 20px;
   font-weight: 400;
-  text-decoration: none;
   align-self: end;
+  text-decoration: none;
 }
 
 .lots__look-more-link {
@@ -259,7 +263,6 @@
   display: grid;
   grid-template-columns: 334px auto;
   width: 1052px;
-  height: 595px;
 }
 
 .about__column {
@@ -295,23 +298,23 @@
 
 .about__text {
   margin-left: 25px;
+  margin-bottom: 25px;
+  width: 687px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .footer {
-  margin: 180px 50px 88px;
+  margin: 157px 50px 88px;
   padding-left: 0;
   width: 1000px;
-  height: 98px;
   display: flex;
 }
 
 .footer__menu {
   margin-left: 222px;
   width: 149px;
-  height: 64px;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
@@ -323,7 +326,6 @@
 
 .footer__menu-link {
   margin: auto;
-  white-space: nowrap;
 }
 
 .footer__social-list {
@@ -331,7 +333,6 @@
   display: flex;
   justify-content: space-between;
   width: 240px;
-  height: 48px;
 }
 
 .footer__social-icon {
