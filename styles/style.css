@@ -74,11 +74,11 @@
 }
 
 .cover {
-  margin-top: 96px;
   position: relative;
-  background-image: url(../images/cover.jpg); 
-  background-position: center center;
-  background-size: cover;
+  margin-top: 96px;
+  background: url(../images/cover.jpg) center / cover; 
+  /*background-position: center center;
+  background-size: cover;*/
   width: 100%;
   height: 757px;
 }
